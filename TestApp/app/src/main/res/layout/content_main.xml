@@ -20,24 +20,45 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/textView" />
+        android:id="@+id/tvHello" />
 
-    <RadioButton
-        android:text="Male"
+    <TextView
+        android:text="@string/please_make_a_choice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/radioButton"
-        android:layout_alignBottom="@+id/radioButton"
-        android:layout_marginBottom="21dp" />
-
-    <RadioButton
-        android:text="Female"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioButton"
-        android:layout_marginTop="179dp"
-        android:layout_below="@+id/textView"
+        android:id="@+id/tvChoice"
+        android:layout_above="@+id/rbgSex"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:id="@+id/rbgSex"
+        android:addStatesFromChildren="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checkedButton="@+id/rbMale">
+
+        <RadioButton
+            android:text="@string/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbMale"
+            android:duplicateParentState="true"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbFemale"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1" />
+
+    </RadioGroup>
 
 </RelativeLayout>

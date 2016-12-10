@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello_partha">Hello Partha!</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="please_android_string_selectall">Please @android:string/selectAll</string>
+    <string name="please_make_a_choice">Please Make a Choice</string>
 </resources>
